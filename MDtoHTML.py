@@ -150,11 +150,11 @@ def linePadding(level):
 
 def parseSectionBody(line, sections):
 	line = parseSectionBodyLineForHyperlinks(line, sections)
-	line = parseSectionBodyLineForFormatting(line, "\*\*", "strong")
-	line = parseSectionBodyLineForFormatting(line, "\*", "i")
-	line = parseSectionBodyLineForFormatting(line, "\_", "u")
-	line = parseSectionBodyLineForFormatting(line, "\$", "code")
-	line = parseSectionBodyLineForFormatting(line, "\!", "kbd")
+	line = parseSectionBodyLineForFormatting(line, "\\*\\*", "strong")
+	line = parseSectionBodyLineForFormatting(line, "\\*", "i")
+	line = parseSectionBodyLineForFormatting(line, "\\_", "u")
+	line = parseSectionBodyLineForFormatting(line, "\\$", "code")
+	line = parseSectionBodyLineForFormatting(line, "\\!", "kbd")
 	return line
 
 def parseSectionBodyLineForHyperlinks(line, sections):
